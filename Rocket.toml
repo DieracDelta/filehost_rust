@@ -1,3 +1,0 @@
-[global.tls]
-certs = "/var/lib/acme/filehost.restivo.me/chain.pem"
-key = "/var/lib/acme/filehost.restivo.me/key.pem"

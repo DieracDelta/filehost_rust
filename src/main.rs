@@ -85,11 +85,11 @@ fn get_code(id: String) -> NamedFile {
 }
 
 fn get_secret() -> String {
-    env::var("SECRET_PASSWORD").expect("Expected a password in the environment")
+    env::var("SECRET_PASSWORD").expect("Expected SECRET_PASSWORD to be set in the environment")
 }
 
 fn get_storage_path() -> String {
-    env::var("STORAGE_PATH").expect("Expected a storage path in the environment")
+    env::var("STORAGE_PATH").expect("Expected STORAGE_PATH to be set in the environment")
 }
 
 fn main() {
