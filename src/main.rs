@@ -89,7 +89,7 @@ fn get_secret() -> String {
 }
 
 fn get_storage_path() -> String {
-    env::var("STORAGE_PATH").expect("Expected a password in the environment")
+    env::var("STORAGE_PATH").expect("Expected a storage path in the environment")
 }
 
 fn main() {
