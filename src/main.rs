@@ -94,7 +94,7 @@ fn get_storage_path() -> String {
 
 fn main() {
     let storage_path = get_storage_path();
-    remove_dir_all(&storage_path).unwrap();
+    remove_dir_all(&storage_path);
     create_dir(&storage_path).unwrap();
     create_dir(format!("{}{}", &storage_path, IMG_PATH)).unwrap();
     create_dir(format!("{}{}", &storage_path, CODE_PATH)).unwrap();
